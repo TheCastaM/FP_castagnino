@@ -1,9 +1,3 @@
-* {
-    margin: 0px;
-    padding: 0px;
-    font-family: 'Ubuntu', sans-serif;
-}
-
 body {
     color: white;
     background-image: url("../assets/Images/personas_trabajando.jpg");
@@ -12,176 +6,139 @@ body {
     background-attachment: fixed;
     background-position: center center;
     backdrop-filter: blur(5px);
-    position: fixed;
     width: 100%;
     height: 100%;
+    margin: 0;
+}
+
+body,
+html {
+    height: 100%;
+}
+
+
+
+.d-flex.align-items-center {
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+footer {
+    margin-top: auto;
+    background-color: #f8f9fa;
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.comentario {
+    margin: 2rem;
+}
+
+.contenido {
+    display: flex;
+    margin-bottom: 10%;
+    align-content: center;
+}
+
+.conteiner_comentarios {
+    display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+}
+
+.conteiner_principal {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    position: relative;
+    min-height: 90vb;
+}
+
+
+.texto-principal {
+    font-size: 2rem;
+    text-shadow: 2px 2px 1px black;
+    padding: 10%;
+}
+
+.frase-principal {
+    font-size: 3rem;
+    text-shadow: 2px 2px 1px black;
+}
+
+.nosotros {
+    min-height: 85vb;
+}
+
+.texto-nosotros {
+    text-align: center;
+    font-size: 3rem;
+    margin-top: 5%;
+}
+
+.conteiner_nosotros {
+    text-shadow: 2px 2px 1px black;
+    display: flex;
+    text-align: center;
+    margin: 10%;
+    gap: 10%;
+}
+
+.columna_nosotros {
     display: flex;
     flex-direction: column;
 }
 
-a {
-    /* color: white; */
-    font-weight: 550;
-    text-decoration: none;
-}
-
 footer {
-    margin-top: auto; 
-    text-align: center;
-    padding: 10px;
     background-color: black;
-}
-
-header {
-    top: 60px;
-    right: 60px;
-    padding: 50px;
-}
-
-.frase-principal {
-    display: flex;
-    font-size: 2.5rem;
-    justify-content: center;
     text-align: center;
-    text-shadow: 2px 2px 1px black ;
-}
-
-.texto-principal {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-    margin: auto;
-    text-align: center;
-    font-size: 1.5rem;
-    text-shadow: 2px 2px 1px black ;
-    font-weight: 550;
-}
-
-.section {
-    width: 50%;
-    float: left;
-    box-sizing: border-box;
-    padding: 20px;
-}
-
-.objetivos {
-    list-style: none;
-    padding-top: 175px;
-    text-align: center;
-    text-shadow: 2px 2px 1px black;
-    font-weight: 500;
-}
-
-.izquierda {
-    padding-left: 200px;
-    padding-right: 100px;
-}
-
-.derecha {
-    padding-right: 200px;
-    padding-left: 100px;
-}
-
-.productos {
-    padding-top: 100px;   
-}
-
-.imagen-producto {
-    width: 400px;
-    height: 300px;
-}
-
-.celdas {
-    padding: 50px;
-}
-
-.comentarios {
-    padding-top: 200px;
-    margin: 30px;
-}
-
-.comentario {
-    padding-top: 150px;
-    justify-content: space-around;
-    align-items: normal;
-    margin: 10px;
-}
-
-.autor {
-    margin-top: 20px;
-    background-color: grey;
-}
-
-.comentario-espesifico {
-    background-color: grey;
-}
-
-
-.formulario {
-    padding-top: 70px;
-    padding-left: 850px;
-    font-weight: 500;
-}
-
-.texto-formulario {
-    margin-top: 10px;
-    margin-bottom: 5px;
-    text-align: left;
-}
-
-
-
-
-
-
-
-
-nav ul {
     position: absolute;
-    font-size: 20px;
-    top: 80px;
-    right: 50px;
-    list-style: none;
-    display: flex;
-    margin: 0;
-    padding: 0;
+    bottom: 0;
+    width: 100%;
+    height: auto;
 }
 
-nav li {
-    margin-right: 10px;
+@media screen and (max-width:1024px) {
+    .texto-principal {
+        font-size: 1.5rem;
+    }
+
+    .frase-principal {
+        font-size: 2.5rem;
+    }
 }
 
-.logo {
-    position: absolute;
-    top: 40px;
-    left: 40px;
-    width: 100px;
+@media screen and (max-width:750px) {
+    .conteiner_nosotros {
+        flex-wrap: wrap;
+        margin: 5%;
+        margin-top: 20%;
+        gap: 5%;
+    }
+
+    .texto-nosotros {
+        font-size: 2rem;
+    }
+
+    .nosotros {
+        min-height: 88vb;
+    }
 }
 
-/* .imagen-principal {
-    position: absolute;
-    bottom: 40px;
-    right: 50px;
-    width: 700px;
+@media screen and (max-width:425px) {
+    .texto-principal {
+        font-size: 1rem;
+    }
+
+    .frase-principal {
+        font-size: 2rem;
+    }
 }
-
-
-
-.texto-descriptivo {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
-
-
-table {
-    margin: 0 auto;
-} */
-
-
-
-
-
