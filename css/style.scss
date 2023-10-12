@@ -8,6 +8,44 @@ body {
     backdrop-filter: blur(5px);
     width: 100%;
     height: 100%;
+    margin: 0;
+}
+
+body,
+html {
+    height: 100%;
+}
+
+.d-flex.align-items-center {
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+footer {
+    margin-top: auto;
+    background-color: #f8f9fa;
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.comentario {
+    margin: 2rem;
+}
+
+.contenido {
+    display: flex;
+    margin-bottom: 10%;
+    align-content: center;
+}
+
+.conteiner_comentarios {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
 }
 
 .conteiner_principal {
@@ -19,8 +57,7 @@ body {
     align-content: center;
     text-align: center;
     position: relative;
-    min-height: 90vb;
-    text-wrap: wrap;
+    min-height: 90vh;
 }
 
 .texto-principal {
@@ -35,7 +72,7 @@ body {
 }
 
 .nosotros {
-    min-height: 85vb;
+    min-height: 85vh;
 }
 
 .texto-nosotros {
@@ -66,13 +103,6 @@ footer {
     height: auto;
 }
 
-.fotos_productos {
-    width: 150px;
-    height: 150px;
-    overflow: hidden;
-
-}
-
 @media screen and (max-width:1024px) {
     .texto-principal {
         font-size: 1.5rem;
@@ -96,7 +126,7 @@ footer {
     }
 
     .nosotros {
-        min-height: 88vb;
+        min-height: 88vh;
     }
 }
 
