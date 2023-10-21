@@ -70,10 +70,26 @@ footer {
 .nosotros {
   min-height: 85vb;
 }
+@media (max-width: 750px) {
+  .nosotros {
+    min-height: 88vb;
+  }
+}
 .nosotros .texto-nosotros {
   text-align: center;
-  font-size: 3rem;
+  font-size: 2rem;
   margin-top: 5%;
+  padding: 5%;
+}
+@media (max-width: 750px) {
+  .nosotros .texto-nosotros {
+    font-size: 1.5rem;
+  }
+}
+@media (max-width: 425px) {
+  .nosotros .texto-nosotros {
+    font-size: 1rem;
+  }
 }
 .nosotros .conteiner_nosotros {
   text-shadow: 2px 2px 1px black;
@@ -81,6 +97,14 @@ footer {
   text-align: center;
   margin: 10%;
   gap: 10%;
+}
+@media (max-width: 750px) {
+  .nosotros .conteiner_nosotros {
+    flex-wrap: wrap;
+    margin: 5%;
+    margin-top: 15%;
+    gap: 5%;
+  }
 }
 .nosotros .columna_nosotros {
   display: flex;

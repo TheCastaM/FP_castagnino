@@ -72,10 +72,24 @@ footer {
 .nosotros {
     min-height: 85vb;
 
+    @media (max-width:750px) {
+        min-height: 88vb;
+    }
+
     .texto-nosotros {
         text-align: center;
-        font-size: 3rem;
+        font-size: 2rem;
         margin-top: 5%;
+        padding:5%;
+
+        @media (max-width:750px) {
+            font-size: 1.5rem;
+        }
+
+        @media (max-width:425px) {
+            font-size: 1rem;
+        }
+
     }
 
     .conteiner_nosotros {
@@ -84,6 +98,14 @@ footer {
         text-align: center;
         margin: 10%;
         gap: 10%;
+
+        @media (max-width:750px) {
+            flex-wrap: wrap;
+            margin: 5%;
+            margin-top: 15%;
+            gap: 5%;
+        }
+
     }
 
     .columna_nosotros {
